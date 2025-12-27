@@ -1,0 +1,18 @@
+site_name: SBI Cosmo
+theme:
+  name: material
+
+plugins:
+  - mkdocstrings:
+      handlers:
+        python:
+          options:
+            docstring_style: google
+            show_source: true
+
+nav:
+  - Home: index.md
+  - Design: design.md
+  - User Guide: user_guide.md
+  - API Reference:
+      - Reference: reference.md
