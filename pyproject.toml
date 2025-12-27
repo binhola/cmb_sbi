@@ -5,7 +5,7 @@ description = "Simulation-Based Inference notes, experiments, and tutorials usin
 authors = [
     {name = "Binh Nguyen", email = "thi-yen-binh.nguyen@universite-paris-saclay.fr"},
 ]
-dependencies = []
+dependencies = ["torch>=2.7.1", "numpy>=2.4.0", "matplotlib>=3.10.8", "sbi>=0.22.0"]
 requires-python = ">=3.12"
 readme = "README.md"
 license = {text = "MIT"}
