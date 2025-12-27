@@ -1,0 +1,19 @@
+[project]
+name = "sbi-cosmo"
+version = "0.1.0"
+description = "Simulation-Based Inference notes, experiments, and tutorials using Python."
+authors = [
+    {name = "Binh Nguyen", email = "thi-yen-binh.nguyen@universite-paris-saclay.fr"},
+]
+dependencies = []
+requires-python = ">=3.12"
+readme = "README.md"
+license = {text = "MIT"}
+
+[build-system]
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
+
+
+[tool.pdm]
+distribution = true
