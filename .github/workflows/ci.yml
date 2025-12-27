@@ -1,0 +1,29 @@
+name: Continuous Integration
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: 3.12
+
+    - name: Install PDM
+      run: pip install --user pdm
+
+    - name: Install dependencies
+      run: pdm install --prod
+
+    - name: Run tests
+      run: pdm run pytest -v --cov=src --cov-report=xml --junitxml=junit.xml
