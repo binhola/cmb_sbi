@@ -1,0 +1,42 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+venv/
+env/
+.venv/
+.env/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# PyTorch / TensorFlow
+*.pt
+*.pth
+*.ckpt
+
+# Data files (if large, do not track)
+*.npy
+*.npz
+*.h5
+*.hdf5
+*.fits
+*.dat
+*.csv
+
+# Logs
+*.log
+
+# OS generated
+.DS_Store
+Thumbs.db
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
+
+.python-version
+notebooks/sbi-logs/
